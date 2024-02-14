@@ -7,3 +7,20 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# array = []
+# 5.times do
+#   array << "hello"
+# end
+# puts array
+
+5.times do
+  Restaurant.create!(name: Faker::Restaurant.name,
+  address: Faker::Address.street_address, phone_number: Faker::PhoneNumber.cell_phone, category: Restaurant::CATEGORY.sample)
+end
+
+
+# restaurant name
+# address
+# phone number
+# category
